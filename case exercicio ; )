@@ -1,0 +1,43 @@
+#include <iostream> 
+#include <string> 
+using namespace std; 
+
+int main(){
+    cout << "calculadora pika ;)" << endl; 
+int num1=0; 
+int num2=0; 
+char op; 
+int resultado; 
+
+std::cout <<"\n escolha um numero  "  << std::endl; 
+std::cin >> num1; 
+
+std::cout <<"escolha outro numero  "  << std::endl; 
+std::cin >> num2; 
+
+cout <<"escolha o operador " <<endl;
+cin>>op; 
+switch(op) {
+    
+    case'+':
+    resultado=num1 + num2; 
+        break; 
+    
+    case'-': 
+    resultado=num1 - num2; 
+        break; 
+
+    case'*': 
+    resultado=num1 * num2; 
+        break; 
+
+    case'/':
+    resultado=num1 / num2; 
+    break;  
+default: 
+cout << "operador invalido"; 
+    return 0; 
+} 
+cout<<"o resultado de "<< num1 << op << num2 << " eh " << resultado << endl;
+    return 0;
+}
