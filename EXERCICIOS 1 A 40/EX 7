@@ -1,0 +1,10 @@
+
+#include <iostream> 
+using namespace std;
+
+int main()
+{ 
+    cout <<"o resultado é : "<<28 * 43;
+
+    return 0;
+}
