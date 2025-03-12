@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int a = 8, b = 9, c = 7;
+    
+    int soma = a + b + c;
+    
+    double media = static_cast<double>(soma) / 3;
+    
+    cout << "A média aritmética entre " << a << ", " << b << " e " << c << " é: " << media << endl;
+    
+    return 0;
+}
