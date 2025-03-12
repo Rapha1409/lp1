@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    string nome;
+    string endereco;  
+    
+    cout << "Digite o seu nome: " << endl; 
+    getline(cin, nome); 
+    
+    cout << "Digite seu endereço: " << endl;
+    getline(cin, endereco);
+    
+    cout << "\nSeus dados são:" << endl; 
+    cout << "Nome: " << nome << endl; 
+    cout << "Endereço: " << endereco << endl;
+    
+    return 0;
+}
