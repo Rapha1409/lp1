@@ -1,0 +1,10 @@
+
+#include <iostream> 
+using namespace std;
+
+int main()
+{
+    cout <<"E FAZER TODOS OS ALGORITIMOS PARA APRENDER";
+
+    return 0;
+}
