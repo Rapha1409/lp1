@@ -1,0 +1,11 @@
+
+#include <iostream> 
+using namespace std;
+
+int main()
+{
+    cout <<"APRENDENDO ALGORITIMO"; 
+    cout <<"\nmeu nome é RAPHAEL "; 
+
+    return 0;
+}
