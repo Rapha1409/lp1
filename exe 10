@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>  
+
+int main() {
+    std::string nome; 
+    std::string endereco; 
+    int numero;
+
+    std::cout << "Digite seu nome: ";
+    std::getline(std::cin, nome);  
+    
+    std::cout << "Digite seu endereco: ";
+    std::getline(std::cin, endereco);  
+    
+    std::cout << "Digite seu numero: ";
+    std::cin >> numero; 
+    
+    std::cout <<"segue abaixo seus dados:"  << std::endl;
+    std::cout <<"seu nome é :"<< nome << std::endl; 
+    std::cout <<"seu endereco é :"<< endereco << std::endl; 
+    std::cout <<"seu numero é: "<< numero << std::endl;
+    
+    return 0;
+}
