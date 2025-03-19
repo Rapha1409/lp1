@@ -1,0 +1,15 @@
+#include<iostream> 
+int main(){ 
+int num1; 
+int num2; 
+int soma; 
+std::cout <<"digite o numero:  " << std::endl; 
+std::cin >> num1; 
+
+std::cout <<"digite outro numero:   "<< std::endl; 
+std::cin >> num2; 
+
+soma = num1 + num2; 
+std::cout <<"a soma eh : "<< soma << std::endl; 
+return 0; 
+}
