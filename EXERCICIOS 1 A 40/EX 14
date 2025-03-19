@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double numero1, numero2;
+
+    cout << "Digite o primeiro número real: ";
+    cin >> numero1;
+    cout << "Digite o segundo número real: ";
+    cin >> numero2;
+
+    double media = (numero1 + numero2) / 2;
+
+    cout << "Média: " << media << endl;
+
+    return 0;
+}
