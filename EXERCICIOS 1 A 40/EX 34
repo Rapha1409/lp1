@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double numerador, denominador, resultado;
+
+    cout << "Digite o numerador: ";
+    cin >> numerador;
+    cout << "Digite o denominador: ";
+    cin >> denominador;
+
+    if (denominador != 0) {
+  
+        resultado = numerador / denominador;
+
+        cout << "O valor decimal da fração é: " << resultado << endl;
+    } else {
+        cout << "Erro: O denominador não pode ser zero!" << endl;
+    }
+
+    return 0;
+}
