@@ -1,0 +1,41 @@
+#include <iostream>
+#include <cmath> 
+
+using namespace std;
+
+int main() {
+    double anguloGraus, anguloRadianos;
+
+    cout << "Digite o ângulo em graus: ";
+    cin >> anguloGraus;
+
+    anguloRadianos = anguloGraus * M_PI / 180.0;
+
+    double seno = sin(anguloRadianos);
+    double cosseno = cos(anguloRadianos);
+    double tangente = tan(anguloRadianos);
+    double secante = 1.0 / cosseno;   
+    double cossecante = 1.0 / seno;   
+    double cotangente = 1.0 / tangente; 
+
+    cout << "Seno: " << seno << endl;
+    cout << "Cosseno: " << cosseno << endl;
+    cout << "Tangente: " << tangente << endl;
+
+    if (cosseno != 0)
+        cout << "Secante: " << secante << endl;
+    else
+        cout << "Secante não definida (cosseno igual a zero)" << endl;
+
+    if (seno != 0)
+        cout << "Cossecante: " << cossecante << endl;
+    else
+        cout << "Cossecante não definida (seno igual a zero)" << endl;
+
+    if (tangente != 0)
+        cout << "Cotangente: " << cotangente << endl;
+    else
+        cout << "Cotangente não definida (tangente igual a zero)" << endl;
+
+    return 0;
+}
