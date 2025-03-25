@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double numero, base;
+
+    cout << "Digite o número: ";
+    cin >> numero;
+    cout << "Digite a base do logaritmo: ";
+    cin >> base;
+
+    if (numero <= 0) {
+        cout << "O número deve ser maior que 0 para calcular o logaritmo." << endl;
+    } else if (base <= 0 || base == 1) {
+        cout << "A base deve ser maior que 0 e diferente de 1." << endl;
+    } else {
+        double logaritmo = log(numero) / log(base);
+
+        cout << "Logaritmo de " << numero << " na base " << base << " é: " << logaritmo << endl;
+    }
+
+    return 0;
+}
