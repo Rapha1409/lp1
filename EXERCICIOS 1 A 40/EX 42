@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int conta, inverso, resultado, soma = 0;
+    int digito, digito_invertido;
+    
+    cout << "Digite o número da conta corrente (3 dígitos): ";
+    cin >> conta;
+    
+    inverso = 0;
+    int temp = conta;
+    while (temp > 0) {
+        inverso = inverso * 10 + (temp % 10);
+        temp /= 10;
+    }
+
+    resultado = conta * inverso;
+    
+    for (int i = 1; resultado > 0; i++) {
+        digito = resultado % 10; 
+        soma += digito * i;      
+        resultado /= 10;         
+    }
+
+    int digito_verificador = soma % 10;
+
+    cout << "O dígito verificador da conta corrente é: " << digito_verificador << endl;
+
+    return 0;
+}
