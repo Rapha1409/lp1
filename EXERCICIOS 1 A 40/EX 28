@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double valorHoraAula, numeroAulas, percentualINSS, salarioBruto, salarioLiquido;
+
+    cout << "Digite o valor da hora-aula: ";
+    cin >> valorHoraAula;
+    cout << "Digite o número de aulas dadas no mês: ";
+    cin >> numeroAulas;
+    cout << "Digite o percentual de desconto do INSS: ";
+    cin >> percentualINSS;
+
+    salarioBruto = valorHoraAula * numeroAulas;
+
+    double descontoINSS = salarioBruto * (percentualINSS / 100);
+
+    salarioLiquido = salarioBruto - descontoINSS;
+
+    cout << "Salário bruto: R$ " << salarioBruto << endl;
+    cout << "Desconto do INSS: R$ " << descontoINSS << endl;
+    cout << "Salário líquido: R$ " << salarioLiquido << endl;
+
+    return 0;
+}
