@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath> 
+
+using namespace std;
+
+int main() {
+    double raio, altura, volume;
+
+    cout << "Digite o raio da lata de óleo: ";
+    cin >> raio;
+    cout << "Digite a altura da lata de óleo: ";
+    cin >> altura;
+
+    volume = M_PI * pow(raio, 2) * altura;
+
+    cout << "O volume da lata de óleo é: " << volume << " metros cúbicos" << endl;
+
+    return 0;
+}
