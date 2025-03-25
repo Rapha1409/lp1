@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>  
+
+using namespace std;
+
+int main() {
+    double num1, num2, quadradoDaDiferenca, diferencaDosQuadrados;
+
+    cout << "Digite o primeiro número: ";
+    cin >> num1;
+    cout << "Digite o segundo número: ";
+    cin >> num2;
+
+    quadradoDaDiferenca = pow((num1 - num2), 2);
+
+    diferencaDosQuadrados = pow(num1, 2) - pow(num2, 2);
+
+    cout << "Quadrado da diferença: " << quadradoDaDiferenca << endl;
+    cout << "Diferença dos quadrados: " << diferencaDosQuadrados << endl;
+
+    return 0;
+}
