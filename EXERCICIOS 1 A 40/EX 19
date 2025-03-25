@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double saldoAtual;
+
+    cout << "Digite o saldo da aplicação: ";
+    cin >> saldoAtual;
+
+    double reajuste = saldoAtual * 0.01;
+
+    double novoSaldo = saldoAtual + reajuste;
+
+    cout << "O novo saldo, com o reajuste de 1%, é: " << novoSaldo << endl;
+
+    return 0;
+}
