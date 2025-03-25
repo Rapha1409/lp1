@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string> 
+
+using namespace std;
+
+int main() {
+    string nome;
+
+    cout << "Digite seu nome: ";
+    getline(cin, nome);
+
+    cout << "Nome todo: " << nome << endl;
+
+    if (!nome.empty()) {
+        cout << "Primeiro caractere: " << nome[0] << endl;
+    }
+
+    if (!nome.empty()) {
+        cout << "Último caractere: " << nome[nome.length() - 1] << endl;
+    }
+
+    if (nome.length() >= 3) {
+        cout << "Do primeiro até o terceiro caractere: " << nome.substr(0, 3) << endl;
+    } else {
+        cout << "O nome tem menos de 3 caracteres." << endl;
+    }
+
+    if (nome.length() >= 5) {
+        cout << "Quinto caractere: " << nome[4] << endl;
+    } else {
+        cout << "O nome tem menos de 5 caracteres." << endl;
+    }
+
+    if (nome.length() > 1) {
+        cout << "Todos menos o primeiro: " << nome.substr(1) << endl;
+    }
+
+    if (nome.length() >= 2) {
+        cout << "Os dois últimos caracteres: " << nome.substr(nome.length() - 2) << endl;
+    } else {
+        cout << "O nome tem menos de 2 caracteres." << endl;
+    }
+
+    return 0;
+}
