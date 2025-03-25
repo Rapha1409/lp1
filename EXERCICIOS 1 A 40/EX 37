@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double deposito, taxaJuros, rendimento, valorTotal;
+
+    cout << "Digite o valor do depósito: R$ ";
+    cin >> deposito;
+    cout << "Digite a taxa de juros (%): ";
+    cin >> taxaJuros;
+
+    rendimento = deposito * (taxaJuros / 100);
+
+    valorTotal = deposito + rendimento;
+
+    cout << "Rendimento: R$ " << rendimento << endl;
+    cout << "Valor total (depositado + rendimento): R$ " << valorTotal << endl;
+
+    return 0;
+}
