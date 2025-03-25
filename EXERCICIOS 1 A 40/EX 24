@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>   
+
+using namespace std;
+
+int main() {
+    double nota1, nota2;
+
+    cout << "Digite a nota da primeira prova: ";
+    cin >> nota1;
+    cout << "Digite a nota da segunda prova: ";
+    cin >> nota2;
+
+    double media = (nota1 + nota2) / 2;
+
+    int mediaTruncada = static_cast<int>(media);
+
+    double mediaArredondada = round(media);
+
+    cout << "Média truncada: " << mediaTruncada << endl;
+    cout << "Média arredondada: " << mediaArredondada << endl;
+
+    return 0;
+}
