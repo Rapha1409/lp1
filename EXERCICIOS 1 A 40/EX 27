@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double valorProduto, desconto, valorFinal;
+
+    cout << "Digite o valor do produto: ";
+    cin >> valorProduto;
+    cout << "Digite o percentual de desconto: ";
+    cin >> desconto;
+
+    valorFinal = valorProduto - (valorProduto * desconto / 100);
+
+    cout << "O valor final após o desconto é: R$ " << valorFinal << endl;
+
+    return 0;
+}
