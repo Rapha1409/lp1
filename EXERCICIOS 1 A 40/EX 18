@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>   
+
+using namespace std;
+
+int main() {
+    double numero;
+
+    cout << "Digite um número: ";
+    cin >> numero;
+
+    if (numero < 0) {
+        cout << "Não é possível calcular a raiz quadrada de um número negativo no domínio dos números reais." << endl;
+    } else {
+        double quadrado = numero * numero;
+
+        double raizQuadrada = sqrt(numero);
+
+        cout << "O quadrado de " << numero << " é: " << quadrado << endl;
+        cout << "A raiz quadrada de " << numero << " é: " << raizQuadrada << endl;
+    }
+
+    return 0;
+}
