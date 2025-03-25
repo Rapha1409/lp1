@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>  
+
+using namespace std;
+
+int main() {
+    double salarioMinimo, quilowatts, valorPorQuilowatt, valorAPagar, valorComDesconto;
+
+    cout << "Digite o valor do salário mínimo: ";
+    cin >> salarioMinimo;
+    cout << "Digite a quantidade de quilowatts consumidos: ";
+    cin >> quilowatts;
+
+    valorPorQuilowatt = (salarioMinimo / 7) / 100;
+
+    valorAPagar = valorPorQuilowatt * quilowatts;
+
+    valorComDesconto = valorAPagar * 0.9;
+
+    cout << fixed << setprecision(2); 
+    cout << "Valor de cada quilowatt: R$ " << valorPorQuilowatt << endl;
+    cout << "Valor a ser pago sem desconto: R$ " << valorAPagar << endl;
+    cout << "Valor com desconto de 10%: R$ " << valorComDesconto << endl;
+
+    return 0;
+}
