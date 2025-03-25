@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int hora, minutosPassados;
+
+    cout << "Digite a hora (0 a 23): ";
+    cin >> hora;
+
+    minutosPassados = hora * 60;
+
+    cout << "Minutos passados desde o início do dia: " << minutosPassados << " minutos" << endl;
+
+    return 0;
+}
