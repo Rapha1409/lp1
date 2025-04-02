@@ -1,0 +1,21 @@
+//Entrar com um número e exibir a raiz quadrada do número caso ele seja 
+//positivo e o quadrado do número caso ele seja negativo. 
+#include <iostream>
+using namespace std; 
+#include <string>
+#include <cmath>
+int main(){ 
+int num1;
+   cout<<"digite um numero : "; 
+    cin >> num1; 
+    
+    if(num1 > 0){ 
+     cout<<"A raiz do numero: " << sqrt(num1);  
+    } 
+    else{ 
+     cout<<"o quadrado do numero: "<<num1 /3;
+    
+
+ return 0;
+} 
+}
