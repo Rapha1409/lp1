@@ -1,0 +1,33 @@
+//Construir um algoritmo que leia dois números e efetue a adição. Caso o valor 
+//somado seja maior que  20, este deverá ser apresentado somando-se a ele mais 
+//8;  caso o valor somado seja menor ou igual a 20, este deverá ser apresentado 
+//subtraindo-se 5.
+#include <iostream>
+using namespace std; 
+#include <string>
+int main(){ 
+int num1;
+int soma;
+int num2;
+   cout<<"digite um numero : "; 
+    cin >> num1; 
+   cout<<"digite outro numero : "; 
+    cin >> num2; 
+    soma=num1+num2; 
+    
+    if(soma>20){ 
+    soma=soma+ 8;
+     cout<<soma;
+    }
+   else if(soma<20){
+    soma=soma - 5; 
+     cout<<soma;
+    }
+   else if (soma=20){ 
+    soma=soma - 5; 
+     cout<<soma;
+    }
+    
+
+    return 0;
+} 
