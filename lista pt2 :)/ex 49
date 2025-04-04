@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+int main(){
+int num1; 
+
+    cout<<"digite um numero: "; 
+    cin >> num1; 
+   
+    if(num1 % 10 == 0 ) { 
+    std::cout <<"eh divisivel por 10"; 
+    }else if(num1 % 5 == 0 ){ 
+    std::cout <<"eh divisivel por 5";
+    }else if(num1 % 2 == 0 ){ 
+    std::cout <<"eh divisivel por 2";
+    } else { 
+        cout<<"nao eh divisivel nem por 10 nem por 5 nem por 2";
+    
+    
+    return 0;
+    
+}   
+}
