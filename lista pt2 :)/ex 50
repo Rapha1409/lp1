@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double salarioBruto, prestacao;
+    
+    cout << "PREFEITURA DO RIO DE JANEIRO" << endl;
+    cout << "Boa noite! Informe o SALARIO BRUTO: R$ ";
+    cin >> salarioBruto;
+
+    cout << "Informe o VALOR DA PRESTACAO: R$ ";
+    cin >> prestacao;
+    cout << "a sua prestacao é :"<<prestacao <<endl; 
+    cout << "e o seu salario é :"<<salarioBruto <<endl; 
+    double limite = salarioBruto * 0.30;
+
+    if (prestacao <= limite) {
+        cout << "Emprestimo pode ser concedido." << endl;
+    } else {
+        cout << "Emprestimo NAO pode ser concedido. Prestacao excede 30% do salario." << endl;
+    }
+
+    return 0;
+}
