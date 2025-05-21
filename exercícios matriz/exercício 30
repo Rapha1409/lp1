@@ -1,0 +1,28 @@
+
+#include <iostream> 
+using namespace std; 
+
+int main(){ 
+    
+    int linha = 4; 
+    int coluna = 5; 
+    float m[linha][coluna]; 
+    
+    for (int a=0; a<linha; a++) { 
+        for (int b=0; b< coluna; b++) { 
+             cout << "digite um numero: "; 
+             cin >> m[a][b]; 
+        } 
+    } 
+    
+    for (int a=0; a<linha; a++) { 
+        cout << "[ "; 
+        for (int b=0; b<coluna; b++) { 
+             cout << m[a][b] << " "; 
+        } 
+        cout <<"]";
+        cout << endl; 
+    }
+
+    return 0;
+}
