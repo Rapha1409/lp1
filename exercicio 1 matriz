@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int matriz[10][10];
+    long long produto = 1; // Usa long long para evitar overflow
+
+    // Leitura da matriz
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            cout << "Digite o elemento [" << i << "][" << j << "]: ";
+            cin >> matriz[i][j];
+        }
+    }
+
+    // Cálculo do produto dos elementos abaixo da diagonal principal
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < i; j++) { // j < i significa abaixo da diagonal principal
+            produto *= matriz[i][j];
+        }
+    }
+
+    cout << "Produto dos elementos abaixo da diagonal principal: " << produto << endl;
+
+    return 0;
+}
